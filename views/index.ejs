@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/styled.css'/>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Bad+Script" rel="stylesheet">
+  </head>
+  <body>
+      <img id="background" src="images/background.jpg">
+      <img id="protag" src="images/nope.png">
+
+		<a id="link" href="/meals"></a>
+
+    <a href=""><h1 id="turner">Hungry?</h1></a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script type="text/javascript">
+   	$(document).ready(function(){
+   		$("#turner").click(function(){
+   			document.getElementById("protag").style.opacity = "1";
+   			location.href='/meals';
+   			});
+   		});
+   </script>
+  </body>
+</html>

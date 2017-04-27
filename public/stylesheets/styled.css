@@ -1,0 +1,44 @@
+body {
+	margin: 0;
+}
+
+#background {
+	position: relative;
+	z-index: -44;
+	animation: style 1s infinite;
+}
+
+#turner {
+	font-family: 'Audiowide', cursive;
+	position: absolute;
+	color: lightgray;
+	top: 69%;
+	left: 60%;
+	font-size: 104px;
+	margin-bottom: -6%;
+	text-shadow: 7px 7px 7px #C20B45;
+}
+
+#effect {
+	position: absolute;
+	z-index: 4;
+}
+
+#protag {
+	position: absolute;
+	top: 0%;
+	opacity: 0.2;
+	animation: oh 14s infinite;
+}
+
+@keyframes style {
+	0% {filter: sepia(20%);}
+	50% {color: black;}
+	100% {filter: grayscale(60%);}
+}
+
+@keyframes oh {
+	0% {opacity: 0.4;}
+	50% {opacity: 1;}
+	100% {opacity: 0.4;}
+}

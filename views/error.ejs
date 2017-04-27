@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link href="https://fonts.googleapis.com/css?family=Audiowide|Bad+Script" rel="stylesheet">
+	<style type="text/css">
+	body {
+		margin: 0;
+	}
+	#despair { 
+		width: 100%; 
+		z-index: -4;
+		position: relative;
+	}
+	#passing {
+		font-family: 'Bad Script', cursive;
+		color: white;
+		position: absolute;
+		top: -10%;
+		right: 0%;
+		font-size: 104px;
+		font-weight: bolder;
+		text-shadow: 4px 4px 4px black;
+		animation: Colors 4s infinite;
+	}
+
+	#shake {
+		position: absolute;
+		top: 52%;
+		width: 20%;
+		left: 22%;
+	}
+
+	@keyframes Colors {
+  0% {color: black; }
+  10% {color: aqua;}
+  20% {color: deeppink;}
+  30% {color: purple;}
+  40% {color: orange;}
+  50% {color: yellow;}
+  60% {color: lightblue;}
+  70% {color: lightgreen;}
+  80% {color: red;}
+  90% {color: hotpink;}
+  100% {color: mediumpurple;}
+
+}
+
+	</style>
+
+</head>
+<body>
+<img id="despair" src="images/meta_death.png">
+<img id="shake" src="images/levi.gif">
+<h1 id="passing"><%= message %></h1>
+</body>
+</html>
+
+
+<!--<h2><%= error.status %></h2>
+<pre><%= error.stack %></pre>-->
+
+
